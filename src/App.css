@@ -45,6 +45,7 @@ footer {
   width: 100%;
   align-items: start;
   background-color: #ffffff;
+  border-top: 2px solid #495E57;
 }
 
 .footer-card {
@@ -58,4 +59,31 @@ footer {
 .footer-card a {
   color: #495E57;
   text-decoration: none;
+}
+
+.hero-background {
+  background-color: #495E57;
+  height: 100%;
+  display: flex;
+  color:#ffffff;
+}
+
+.hero {
+  padding: 2rem 0;
+  display: grid;
+  align-items: center;
+  grid-column-gap: 2rem;
+  grid-template: "info image";
+  grid-template-columns: 60fr 40fr;
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+.image {
+  grid-area: image;
+  width: 80%;
+  height: 25rem;
+  justify-self: end;
+  border-radius: 16px;
+  object-fit: cover;
 }

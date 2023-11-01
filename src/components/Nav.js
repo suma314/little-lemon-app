@@ -1,5 +1,6 @@
 import 'App.css';
 import logo from 'Logo-Little-Lemon.svg';
+import {Link} from 'react-router-dom';
 
 function Navbar() {
     return(
@@ -7,16 +8,16 @@ function Navbar() {
             <div className='logo-name'>
                 <img src={logo} alt="little-lemon logo" />
             </div>
-        <nav className='nav'>
-            <ul>
-                <li><a href="/#">Home</a></li>
-                <li><a href="/#">About</a></li>
-                <li><a href="/#">Menu</a></li>
-                <li><a href="/#">Reservations</a></li>
-                <li><a href="/#">Order Online</a></li>
-                <li> <a href="/#">Login</a></li>
-            </ul>
-        </nav>
+            <nav className='nav'>
+                <ul>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/menu">Menu</Link></li>
+                    <li><Link to="/reservation">Reservations</Link></li>
+                    <li><Link to="/order">Order Online</Link></li>
+                    <li> <Link to="/login">Login</Link></li>
+                </ul>
+            </nav>
         </header>
     );
 }
