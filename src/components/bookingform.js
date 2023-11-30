@@ -71,21 +71,21 @@ function BookingForm(props) {
                 onSubmit={(e) => handleFormSubmit(e)}
                 style={{ display: "grid",
                     maxWidth: "200px" ,
-                    gap: "20px"}}>
+                    gap: "20px"}} >
                     <label htmlFor="res-date">Choose date</label>
-                    <input aria-label='Date' type="date" id="res-date" value={bookingDate} onChange={onBookingDateChange}/>
+                    <input aria-label='Date' type="date" id="res-date" value={bookingDate} onChange={onBookingDateChange} required/>
                     <label htmlFor="res-time">Choose time</label>
-                    <select aria-label="Time" id="res-time " value={bookingTime} onChange={onBookingTimeChange}>
+                    <select aria-label="Time" id="res-time " value={bookingTime} onChange={onBookingTimeChange} required>
                         {props.availableTimes.map((time) => <option>{time}</option> )}
                     </select>
                     <label htmlFor="guests">Number of guests</label>
                     <input aria-label="Guests" type="number" value={guests} placeholder="1" min="1" max="10" id="guests" onChange={NoOfGuests} />
                     <label htmlFor="occasion">Occasion</label>
-                    <select aria-label="occasion" id="occasion" value={occasion} onChange={onOccasionChange}>
+                    <select aria-label="occasion" id="occasion" value={occasion} onChange={onOccasionChange} required>
                         <option>Birthday</option>
                         <option>Anniversary</option>
                     </select>
-                    <Button  onClick={navigateToConfirmPage}>Reserve Table</Button>
+                    <Button aria-label="On Click" onClick={navigateToConfirmPage}>Reserve Table</Button>
                 </form >
             </CardBody>
         </Card>
