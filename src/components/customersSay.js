@@ -8,16 +8,19 @@ function CustomersSay() {
     return (
         <div style={{ backgroundColor: "#495E57", paddingBottom: "20px"}}>
             <h2 style={{fontSize: "larger", marginLeft: "120px", marginRight: "120px", marginTop: "40px", color: "white"}}>Testimonials </h2>
-            <div style={{display:"flex", marginLeft: "120px", marginRight: "120px", gap: "10px"}}>
+            <div style={{display:"flex", flexWrap: "wrap", marginLeft: "120px", marginRight: "120px", gap: "10px"}}>
+                    <div style={{flex: 2}}>
                     <Card>
                         <CardHeader>
                             <div>★★★★★</div>
                            <img src={person1} alt="customer1" style={{width: "420px", height: "200px"}}/>
                         </CardHeader>
                         <CardBody>
-                            <p> This is true to good experience and dinner</p>
+                            <p> This is true to good experience and dinner. Really amazing.</p>
                         </CardBody>
                     </Card>
+                    </div>
+                    <div style={{flex: 2}}>
                     <Card>
                         <CardHeader>
                         <div>★★★★★</div>   
@@ -26,8 +29,9 @@ function CustomersSay() {
                         <CardBody>
                             <p>View a summary of all your customers over the last month.</p>
                         </CardBody>
-                       
                     </Card>
+                    </div>
+                    <div style={{flex: 2}}>
                     <Card>
                         <CardHeader>
                         <div>★★★★★</div>
@@ -38,6 +42,8 @@ function CustomersSay() {
                         </CardBody>
                        
                     </Card>
+                    </div>
+                    <div style={{flex: 2}}>
                     <Card>
                         <CardHeader>
                         <div>★★★★★</div>
@@ -48,6 +54,7 @@ function CustomersSay() {
                         </CardBody>
                        
                     </Card>
+                    </div>
             </div>
         </div>
     );

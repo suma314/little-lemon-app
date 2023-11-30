@@ -10,7 +10,8 @@ function Specials() {
             <div style={{ display: "grid", gridTemplateColumns: "1fr auto", justifyContent: "start" }}>
                 <h1 style={{fontSize: "larger", marginLeft: "120px", marginRight: "120px", marginTop: "40px"}}>Specials</h1>
             </div>
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", marginLeft: "120px", marginRight: "120px" }}>
+                <div style={{flex: 2}}>
                 <Card maxW='sm'>    
                     <CardBody>
                         <img
@@ -35,6 +36,8 @@ function Specials() {
                         <Button>OrderOnline</Button>
                     </CardFooter>
                 </Card>
+                </div>
+                <div style={{flex: 2}}>
                 <Card maxW='sm'>
                     <CardBody>
                         <img
@@ -59,6 +62,8 @@ function Specials() {
                         <Button>OrderOnline</Button>
                     </CardFooter>
                 </Card>
+                </div>
+                <div style={{flex: 2}}>
                 <Card maxW='sm'>
                     <CardBody>
                         <img
@@ -82,6 +87,7 @@ function Specials() {
                         <Button>OrderOnline</Button>
                     </CardFooter>
                 </Card>
+                </div>
             </div>
         </div>
     )
