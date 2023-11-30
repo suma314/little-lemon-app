@@ -52,6 +52,8 @@ function BookingForm(props) {
         const areAllFieldsFilled = Object.values(formValues).every(
           (value) => value
         );
+
+        props.formSubmit(formValues);
         return true;
     };
 
